@@ -7,7 +7,7 @@ router.get('/', async(req, res, next) => {
   res.json({
     data: data
   })
-});
+})
 
 router.post('/encuesta', async(req, res) => {
   const {

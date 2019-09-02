@@ -7,26 +7,26 @@ Excelente
 Bueno
 Regular
 Malo
-Justificacion Explica tu respuesta:
+2.Justificacion Explica tu respuesta:
 
-2. ¿Recomendarías a SOLVENTO con otra empresa?
+3. ¿Recomendarías a SOLVENTO con otra empresa?
   R: Si/No
 
-¿Consideras que solvento constituye un valor agregado a tu organización?
+4.¿Consideras que solvento constituye un valor agregado a tu organización?
 Si/No
 
-¿Cómo podríamos mejorar nuestro servicio?
+5.¿Cómo podríamos mejorar nuestro servicio?
  */
 
 const {Schema, model} = require('mongoose')
 
 const encuestaSchema = new Schema({
   folioEmpresa:String,
-  enum:['EXCELENTE', 'BUENO', 'REGULAR', 'MALO'],
-  respuesta1_justi: String, 
-  respuesta2: Boolean,
-  respuesta3: Boolean,
-  respuesta4: String
+  respuesta1: String, 
+  respuesta2_justi: String,
+  respuesta3: String,
+  respuesta4: String,
+  respuesta5: String
 },{
   timestamps:true
 })
