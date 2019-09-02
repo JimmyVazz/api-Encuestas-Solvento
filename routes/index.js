@@ -2,11 +2,10 @@ const express = require('express');
 const router  = express.Router();
 const encuesta = require('../useCases/EncuestaAcreditado')
 /* GET home page */
-router.get('/', (req, res, next) => {
+router.get('/', async(req, res, next) => {
+  const data = await encuesta.getAll()
   res.json({
-    name: "Jimmy",
-    apepat: "Vasquez",
-    apemat: "Fuentes"
+    data: data
   })
 });
 
