@@ -29,7 +29,7 @@ router.post('/encuesta', async(req, res) => {
   })
 })
 
-router.get('/rh', (req, res) => {
+router.get('/rh', async(req, res) => {
   const data = await encuestaRH.getAll()
   res.json({
     data: data
