@@ -1,9 +1,9 @@
 //Import del modelo de la BD
 const EncuestaRH = require('../models/EncuestaRH')
 //Funcion que crea un nuevo documento en la BD
-function createEncuesta(folioCliente, respuesta1, respuesta2, respuesta3_justi, respuesta4){
+function createEncuesta(folioEmpresa, respuesta1, respuesta2_justi, respuesta3, respuesta4, respuesta5){
     const encuesta = new EncuestaRH({
-        folioCliente, respuesta1, respuesta2, respuesta3_justi, respuesta4
+        folioEmpresa, respuesta1, respuesta2_justi, respuesta3, respuesta4, respuesta5
     }) 
 
     return encuesta.save()
