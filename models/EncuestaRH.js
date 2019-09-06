@@ -26,7 +26,9 @@ const encuestaSchema = new Schema({
   respuesta2_justi: String,
   respuesta3: String,
   respuesta4: String,
-  respuesta5: String
+  respuesta5: String,
+  latitude: Number,
+  longitude: Number
 },{
   timestamps:true
 })
