@@ -18,11 +18,13 @@ Si/No
 const {Schema, model} = require('mongoose')
 
 const encuestaSchema = new Schema({
-  folioCliente: Number,
+  folioCliente: String,
   respuesta1: String,
   respuesta2: String, 
   respuesta3_justi: String,
-  respuesta4: String
+  respuesta4: String,
+  latitude: Number,
+  longitude: Number
 },{
   timestamps:true
 })

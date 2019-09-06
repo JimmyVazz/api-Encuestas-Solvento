@@ -1,9 +1,9 @@
 //Import del modelo de la BD
 const EncuestaAcreditado = require('../models/EncuestaAcreditado')
 //Funcion que crea un nuevo documento en la BD
-function createEncuesta(folioCliente, respuesta1, respuesta2, respuesta3_justi, respuesta4){
+function createEncuesta(folioCliente, respuesta1, respuesta2, respuesta3_justi, respuesta4, longitude, latitude){
     const encuesta = new EncuestaAcreditado({
-        folioCliente, respuesta1, respuesta2, respuesta3_justi, respuesta4
+        folioCliente, respuesta1, respuesta2, respuesta3_justi, respuesta4, longitude, latitude
     }) 
 
     return encuesta.save()
